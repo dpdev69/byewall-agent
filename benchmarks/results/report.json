@@ -1,0 +1,1791 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-09-14T18:19:15.786Z",
+  "mode": "live-and-synthetic",
+  "corpus": {
+    "version": 1,
+    "sha256": "589c85f05086c1e09ddb5be6c2155859c0dfe2e9add59e121231d1bb9012898e",
+    "selected_at": "2026-09-14T18:16:59.818Z",
+    "total_articles": 25
+  },
+  "environment": {
+    "node": "v26.8.2",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "reader_fingerprints": {
+    "article.mjs": "90bac71c35e7c350fdc480b84abb255b9f50cafce3c197cf3eed1f5d1d780c3f",
+    "browser-preference.mjs": "cf04fec6a43379112421f043783653dc27850fe78ab924e363c29db52c3f387a",
+    "core.cjs": "e92efe5757319735dbfe672dffaa299a158e9bf7cc4adf015b5d919cecbf0a74",
+    "html-budget.mjs": "9401d03dfba35bf60f3623af7e9ec19b300cdf1fdf4484111f24b0a170b7ac4e",
+    "public-fetch.mjs": "8331679050ce329ea2b498b3687bd0046f7be7a92a51fd097e70e276ad373e5a",
+    "read-article.mjs": "366117f3b5081bd2d8984e59e0d40f0f7f32120afca3bfcaa87242d8d4856912",
+    "package.json": "1e1acc242902f0ebe669a6a210865e5341f966e01967a09b61eec1e970444e17",
+    "package-lock.json": "a9df16fb5f3ed0a839df498139ff599a2b50b25db9eb20b0d781ece8ebccd612"
+  },
+  "policy": {
+    "article_concurrency": 2,
+    "per_provider_concurrency": 1,
+    "provider_interval_ms": 2000,
+    "retry_count": 0,
+    "circuit_breaker": "Run-long stop for provider family after HTTP 429 or explicit verification screen; archive mirrors share one family.",
+    "browser_automation": false,
+    "auth_or_cookies": false,
+    "archive_capture": false
+  },
+  "definitions": {
+    "extraction_candidate": "Reader returned readable; completeness remains unknown and text was not compared against an independently complete article.",
+    "browser_followup_candidate": "Non-readable outcome other than mismatch; a follow-up proxy, not measured browser necessity or browser success.",
+    "classification_accuracy": "Expected statuses and constraints on synthetic fixtures only; no live completeness ground truth."
+  },
+  "synthetic": [
+    {
+      "id": "readable-original",
+      "expected_status": "readable",
+      "actual_status": "readable",
+      "word_count": 378,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 7
+    },
+    {
+      "id": "readable-archive",
+      "expected_status": "readable",
+      "actual_status": "readable",
+      "word_count": 378,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 2
+    },
+    {
+      "id": "missing-http404",
+      "expected_status": "unavailable",
+      "actual_status": "unavailable",
+      "word_count": 0,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 0
+    },
+    {
+      "id": "missing-archive",
+      "expected_status": "unavailable",
+      "actual_status": "unavailable",
+      "word_count": 0,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 0
+    },
+    {
+      "id": "partial-short",
+      "expected_status": "partial",
+      "actual_status": "partial",
+      "word_count": 13,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 1
+    },
+    {
+      "id": "partial-subscription",
+      "expected_status": "partial",
+      "actual_status": "partial",
+      "word_count": 378,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 1
+    },
+    {
+      "id": "blocked-challenge",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "word_count": 0,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 0
+    },
+    {
+      "id": "blocked-http429",
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "word_count": 0,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 0
+    },
+    {
+      "id": "mismatched-title",
+      "expected_status": "mismatch",
+      "actual_status": "mismatch",
+      "word_count": 0,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 0
+    },
+    {
+      "id": "mismatched-archive-target",
+      "expected_status": "mismatch",
+      "actual_status": "mismatch",
+      "word_count": 0,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 1
+    },
+    {
+      "id": "unconfirmed-copy",
+      "expected_status": "needs_review",
+      "actual_status": "needs_review",
+      "word_count": 378,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 1
+    },
+    {
+      "id": "hidden-body",
+      "expected_status": "partial",
+      "actual_status": "partial",
+      "word_count": 7,
+      "passed": true,
+      "errors": [],
+      "elapsed_ms": 1
+    }
+  ],
+  "live": [
+    {
+      "id": "bloomberg-1",
+      "publisher": "Bloomberg",
+      "original_url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "status": "blocked",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:16.050Z",
+      "route": "original",
+      "identity": {
+        "verified": false,
+        "evidence": [
+          "source_url_matches_original"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "verification_or_access_screen"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+          "source_url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+          "status": "blocked",
+          "http_status": 403,
+          "reasons": [
+            "verification_or_access_screen"
+          ],
+          "processing": {
+            "input_bytes": 13856,
+            "html_bytes": 12737,
+            "removed_noncontent_bytes": 1119,
+            "element_count": 32
+          }
+        },
+        {
+          "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+          "status": "unavailable",
+          "error": "timeout"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+          "source_url": "https://web.archive.org/web/20260914090433/https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+          "status": "blocked",
+          "http_status": 403,
+          "reasons": [
+            "http_403"
+          ],
+          "processing": {
+            "input_bytes": 10721,
+            "html_bytes": 8221,
+            "removed_noncontent_bytes": 2500,
+            "element_count": 99
+          }
+        }
+      ],
+      "elapsed_ms": 30681,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "ft-1",
+      "publisher": "FT",
+      "original_url": "https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "source_url": "https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "status": "blocked",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:16.116Z",
+      "route": "original",
+      "identity": {
+        "verified": false,
+        "evidence": [
+          "source_url_matches_original"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "verification_or_access_screen"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+          "source_url": "https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+          "status": "blocked",
+          "http_status": 403,
+          "reasons": [
+            "verification_or_access_screen"
+          ],
+          "processing": {
+            "input_bytes": 270434,
+            "html_bytes": 267206,
+            "removed_noncontent_bytes": 3228,
+            "element_count": 51
+          }
+        },
+        {
+          "url": "https://archive.is/newest/https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+          "status": "unavailable",
+          "error": "timeout"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+          "source_url": "https://web.archive.org/web/2/https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+          "status": "unavailable",
+          "http_status": 404,
+          "reasons": [
+            "http_404"
+          ],
+          "processing": {
+            "input_bytes": 142246,
+            "html_bytes": 132951,
+            "removed_noncontent_bytes": 9295,
+            "element_count": 547
+          }
+        }
+      ],
+      "elapsed_ms": 33661,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "guardian-1",
+      "publisher": "Guardian",
+      "original_url": "https://www.theguardian.com/science/2024/jan/11/amazon-archaeology-lost-cities-ecuador",
+      "source_url": "https://www.theguardian.com/science/2024/jan/11/amazon-archaeology-lost-cities-ecuador",
+      "status": "readable",
+      "word_count": 439,
+      "text_characters": 2709,
+      "published_at": "2024-01-11T20:26:08.000Z",
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:47.377Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original",
+          "expected_title_matches"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.theguardian.com/science/2024/jan/11/amazon-archaeology-lost-cities-ecuador",
+          "source_url": "https://www.theguardian.com/science/2024/jan/11/amazon-archaeology-lost-cities-ecuador",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 334910,
+            "html_bytes": 303624,
+            "removed_noncontent_bytes": 31286,
+            "element_count": 849
+          }
+        }
+      ],
+      "elapsed_ms": 912,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "ap-1",
+      "publisher": "AP",
+      "original_url": "https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+      "source_url": "https://apnews.com/article/nasa-james-webb-telescope-horsehead-nebula-be88e5a1fc018f2407536f1d6f6d3c10",
+      "status": "blocked",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:48.126Z",
+      "route": "original",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "verification_or_access_screen"
+      ],
+      "attempts": [
+        {
+          "url": "https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+          "source_url": "https://apnews.com/article/nasa-james-webb-telescope-horsehead-nebula-be88e5a1fc018f2407536f1d6f6d3c10",
+          "status": "blocked",
+          "http_status": 403,
+          "reasons": [
+            "verification_or_access_screen"
+          ],
+          "processing": {
+            "input_bytes": 5820,
+            "html_bytes": 2359,
+            "removed_noncontent_bytes": 3461,
+            "element_count": 17
+          }
+        },
+        {
+          "url": "https://archive.is/newest/https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+          "source_url": "https://archive.is/newest/https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+          "status": "unavailable",
+          "http_status": 404,
+          "reasons": [
+            "http_404"
+          ],
+          "processing": {
+            "input_bytes": 4134,
+            "html_bytes": 3667,
+            "removed_noncontent_bytes": 467,
+            "element_count": 54
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 7567,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "nasa-1",
+      "publisher": "NASA",
+      "original_url": "https://www.nasa.gov/image-article/webb-spots-a-starburst/",
+      "source_url": "https://www.nasa.gov/image-article/webb-spots-a-starburst/",
+      "status": "readable",
+      "word_count": 109,
+      "text_characters": 655,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:50.609Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.nasa.gov/image-article/webb-spots-a-starburst/",
+          "source_url": "https://www.nasa.gov/image-article/webb-spots-a-starburst/",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 270753,
+            "html_bytes": 247230,
+            "removed_noncontent_bytes": 23523,
+            "element_count": 2090
+          }
+        }
+      ],
+      "elapsed_ms": 1170,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "bloomberg-2",
+      "publisher": "Bloomberg",
+      "original_url": "https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+      "source_url": "https://archive.is/20240806031427/https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+      "status": "blocked",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": "2024-08-06T03:14:27.000Z",
+      "retrieved_at": "2026-09-14T18:19:54.959Z",
+      "route": "archive-today",
+      "identity": {
+        "verified": false,
+        "evidence": [
+          "archive_url_matches_original"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "http_429"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+          "source_url": "https://archive.is/20240806031427/https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+          "status": "blocked",
+          "http_status": 429,
+          "reasons": [
+            "http_429"
+          ],
+          "processing": {
+            "input_bytes": 59079,
+            "html_bytes": 53796,
+            "removed_noncontent_bytes": 5283,
+            "element_count": 51
+          }
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 4330,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "ft-2",
+      "publisher": "FT",
+      "original_url": "https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:54.962Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "guardian-2",
+      "publisher": "Guardian",
+      "original_url": "https://www.theguardian.com/science/2024/jan/11/newly-discovered-cosmic-megastructure-challenges-theories-of-the-universe",
+      "source_url": "https://www.theguardian.com/science/2024/jan/11/newly-discovered-cosmic-megastructure-challenges-theories-of-the-universe",
+      "status": "readable",
+      "word_count": 594,
+      "text_characters": 3733,
+      "published_at": "2024-01-11T20:15:09.000Z",
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:55.519Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original",
+          "expected_title_matches"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.theguardian.com/science/2024/jan/11/newly-discovered-cosmic-megastructure-challenges-theories-of-the-universe",
+          "source_url": "https://www.theguardian.com/science/2024/jan/11/newly-discovered-cosmic-megastructure-challenges-theories-of-the-universe",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 321273,
+            "html_bytes": 291336,
+            "removed_noncontent_bytes": 29937,
+            "element_count": 815
+          }
+        }
+      ],
+      "elapsed_ms": 576,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "ap-2",
+      "publisher": "AP",
+      "original_url": "https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:54.962Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "nasa-2",
+      "publisher": "NASA",
+      "original_url": "https://www.nasa.gov/news-release/nasa-accelerates-space-exploration-earth-science-for-all-in-2024/",
+      "source_url": "https://www.nasa.gov/news-release/nasa-accelerates-space-exploration-earth-science-for-all-in-2024/",
+      "status": "readable",
+      "word_count": 5386,
+      "text_characters": 36518,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:55.879Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original",
+          "expected_title_matches"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.nasa.gov/news-release/nasa-accelerates-space-exploration-earth-science-for-all-in-2024/",
+          "source_url": "https://www.nasa.gov/news-release/nasa-accelerates-space-exploration-earth-science-for-all-in-2024/",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 363847,
+            "html_bytes": 337866,
+            "removed_noncontent_bytes": 25981,
+            "element_count": 2677
+          }
+        }
+      ],
+      "elapsed_ms": 952,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "bloomberg-3",
+      "publisher": "Bloomberg",
+      "original_url": "https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:55.538Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "ft-3",
+      "publisher": "FT",
+      "original_url": "https://www.ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:55.538Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://www.ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://www.ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "guardian-3",
+      "publisher": "Guardian",
+      "original_url": "https://www.theguardian.com/science/2024/jan/11/penelope-rogers-obituary",
+      "source_url": "https://www.theguardian.com/science/2024/jan/11/penelope-rogers-obituary",
+      "status": "readable",
+      "word_count": 430,
+      "text_characters": 2549,
+      "published_at": "2024-01-11T11:38:45.000Z",
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:57.794Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.theguardian.com/science/2024/jan/11/penelope-rogers-obituary",
+          "source_url": "https://www.theguardian.com/science/2024/jan/11/penelope-rogers-obituary",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 315928,
+            "html_bytes": 287001,
+            "removed_noncontent_bytes": 28927,
+            "element_count": 817
+          }
+        }
+      ],
+      "elapsed_ms": 2271,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "ap-3",
+      "publisher": "AP",
+      "original_url": "https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:55.914Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "nasa-3",
+      "publisher": "NASA",
+      "original_url": "https://science.nasa.gov/missions/webb/webb-finds-evidence-for-neutron-star-at-heart-of-young-supernova-remnant/",
+      "source_url": "https://science.nasa.gov/missions/webb/webb-finds-evidence-for-neutron-star-at-heart-of-young-supernova-remnant/",
+      "status": "readable",
+      "word_count": 1033,
+      "text_characters": 6404,
+      "published_at": "2024-02-22T19:00:00.000Z",
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:56.944Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://science.nasa.gov/missions/webb/webb-finds-evidence-for-neutron-star-at-heart-of-young-supernova-remnant/",
+          "source_url": "https://science.nasa.gov/missions/webb/webb-finds-evidence-for-neutron-star-at-heart-of-young-supernova-remnant/",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 311034,
+            "html_bytes": 277753,
+            "removed_noncontent_bytes": 33281,
+            "element_count": 2548
+          }
+        }
+      ],
+      "elapsed_ms": 1057,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "bloomberg-4",
+      "publisher": "Bloomberg",
+      "original_url": "https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:56.970Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "ft-4",
+      "publisher": "FT",
+      "original_url": "https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:56.970Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "guardian-4",
+      "publisher": "Guardian",
+      "original_url": "https://www.theguardian.com/science/2024/mar/02/doing-something-for-the-real-world-how-1000-uk-schoolkids-helped-crack-a-crystals-conundrum",
+      "source_url": "https://www.theguardian.com/science/2024/mar/02/doing-something-for-the-real-world-how-1000-uk-schoolkids-helped-crack-a-crystals-conundrum",
+      "status": "readable",
+      "word_count": 1200,
+      "text_characters": 7618,
+      "published_at": "2024-03-02T16:00:35.000Z",
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:20:00.019Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original",
+          "expected_title_matches"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.theguardian.com/science/2024/mar/02/doing-something-for-the-real-world-how-1000-uk-schoolkids-helped-crack-a-crystals-conundrum",
+          "source_url": "https://www.theguardian.com/science/2024/mar/02/doing-something-for-the-real-world-how-1000-uk-schoolkids-helped-crack-a-crystals-conundrum",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 322253,
+            "html_bytes": 290248,
+            "removed_noncontent_bytes": 32005,
+            "element_count": 875
+          }
+        }
+      ],
+      "elapsed_ms": 3064,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "ap-4",
+      "publisher": "AP",
+      "original_url": "https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:57.809Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "nasa-4",
+      "publisher": "NASA",
+      "original_url": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+      "source_url": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+      "status": "readable",
+      "word_count": 1050,
+      "text_characters": 6530,
+      "published_at": "2024-05-30T14:00:07.000Z",
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:19:59.977Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+          "source_url": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 266076,
+            "html_bytes": 232092,
+            "removed_noncontent_bytes": 33984,
+            "element_count": 2158
+          }
+        }
+      ],
+      "elapsed_ms": 2191,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "bloomberg-5",
+      "publisher": "Bloomberg",
+      "original_url": "https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:20:00.000Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "ft-5",
+      "publisher": "FT",
+      "original_url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:20:00.000Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "guardian-5",
+      "publisher": "Guardian",
+      "original_url": "https://www.theguardian.com/science/2024/mar/02/researchers-study-brain-activity-of-surgeons-for-signs-of-cognitive-overload",
+      "source_url": "https://www.theguardian.com/science/2024/mar/02/researchers-study-brain-activity-of-surgeons-for-signs-of-cognitive-overload",
+      "status": "readable",
+      "word_count": 905,
+      "text_characters": 5703,
+      "published_at": "2024-03-02T09:00:27.000Z",
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:20:02.307Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original",
+          "expected_title_matches"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://www.theguardian.com/science/2024/mar/02/researchers-study-brain-activity-of-surgeons-for-signs-of-cognitive-overload",
+          "source_url": "https://www.theguardian.com/science/2024/mar/02/researchers-study-brain-activity-of-surgeons-for-signs-of-cognitive-overload",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 322569,
+            "html_bytes": 292793,
+            "removed_noncontent_bytes": 29776,
+            "element_count": 819
+          }
+        }
+      ],
+      "elapsed_ms": 2323,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    },
+    {
+      "id": "ap-5",
+      "publisher": "AP",
+      "original_url": "https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+      "source_url": null,
+      "status": "unavailable",
+      "word_count": 0,
+      "text_characters": 0,
+      "published_at": null,
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:20:00.035Z",
+      "route": "none",
+      "identity": {
+        "verified": false,
+        "evidence": []
+      },
+      "completeness": "unknown",
+      "reasons": [],
+      "attempts": [
+        {
+          "url": "https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://archive.is/newest/https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+          "status": "unavailable",
+          "error": "network_error"
+        },
+        {
+          "url": "https://web.archive.org/web/2/https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+          "status": "unavailable",
+          "error": "network_error"
+        }
+      ],
+      "elapsed_ms": 0,
+      "browser_followup_candidate": true,
+      "full_text_verified": null
+    },
+    {
+      "id": "nasa-5",
+      "publisher": "NASA",
+      "original_url": "https://science.nasa.gov/missions/webb/in-odd-galaxy-nasas-webb-finds-potential-missing-link-to-first-stars/",
+      "source_url": "https://science.nasa.gov/missions/webb/in-odd-galaxy-nasas-webb-finds-potential-missing-link-to-first-stars/",
+      "status": "readable",
+      "word_count": 944,
+      "text_characters": 5980,
+      "published_at": "2024-09-25T14:00:00.000Z",
+      "captured_at": null,
+      "retrieved_at": "2026-09-14T18:20:02.899Z",
+      "route": "original",
+      "identity": {
+        "verified": true,
+        "evidence": [
+          "source_url_matches_original",
+          "canonical_matches_original"
+        ]
+      },
+      "completeness": "unknown",
+      "reasons": [
+        "readable_text_found_fullness_unverified"
+      ],
+      "attempts": [
+        {
+          "url": "https://science.nasa.gov/missions/webb/in-odd-galaxy-nasas-webb-finds-potential-missing-link-to-first-stars/",
+          "source_url": "https://science.nasa.gov/missions/webb/in-odd-galaxy-nasas-webb-finds-potential-missing-link-to-first-stars/",
+          "status": "readable",
+          "http_status": 200,
+          "reasons": [
+            "readable_text_found_fullness_unverified"
+          ],
+          "processing": {
+            "input_bytes": 329150,
+            "html_bytes": 295728,
+            "removed_noncontent_bytes": 33422,
+            "element_count": 2596
+          }
+        }
+      ],
+      "elapsed_ms": 2890,
+      "browser_followup_candidate": false,
+      "full_text_verified": null
+    }
+  ],
+  "synthetic_summary": {
+    "cases": 12,
+    "passed": 12,
+    "classification_and_constraint_pass_rate": 1
+  },
+  "network_events": [
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "provider": "bloomberg.com",
+      "outcome": "response",
+      "http_status": 403,
+      "elapsed_ms": 247
+    },
+    {
+      "url": "https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "source_url": "https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "provider": "ft.com",
+      "outcome": "response",
+      "http_status": 403,
+      "elapsed_ms": 311
+    },
+    {
+      "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "provider": "public-archives",
+      "outcome": "fetch_error",
+      "error": "timeout",
+      "elapsed_ms": 12003
+    },
+    {
+      "url": "https://archive.is/newest/https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "provider": "public-archives",
+      "outcome": "fetch_error",
+      "error": "timeout",
+      "elapsed_ms": 12002
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "source_url": "https://web.archive.org/web/20260914090433/https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "provider": "public-archives",
+      "outcome": "response",
+      "http_status": 403,
+      "elapsed_ms": 2420
+    },
+    {
+      "url": "https://www.theguardian.com/science/2024/jan/11/amazon-archaeology-lost-cities-ecuador",
+      "source_url": "https://www.theguardian.com/science/2024/jan/11/amazon-archaeology-lost-cities-ecuador",
+      "provider": "theguardian.com",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 895
+    },
+    {
+      "url": "https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+      "source_url": "https://apnews.com/article/nasa-james-webb-telescope-horsehead-nebula-be88e5a1fc018f2407536f1d6f6d3c10",
+      "provider": "apnews.com",
+      "outcome": "response",
+      "http_status": 403,
+      "elapsed_ms": 731
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "source_url": "https://web.archive.org/web/2/https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "provider": "public-archives",
+      "outcome": "response",
+      "http_status": 404,
+      "elapsed_ms": 973
+    },
+    {
+      "url": "https://www.nasa.gov/image-article/webb-spots-a-starburst/",
+      "source_url": "https://www.nasa.gov/image-article/webb-spots-a-starburst/",
+      "provider": "nasa.gov",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 1145
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+      "provider": "bloomberg.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+      "source_url": "https://archive.is/newest/https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+      "provider": "public-archives",
+      "outcome": "response",
+      "http_status": 404,
+      "elapsed_ms": 703
+    },
+    {
+      "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+      "source_url": "https://archive.is/20240806031427/https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+      "provider": "public-archives",
+      "outcome": "response",
+      "http_status": 429,
+      "elapsed_ms": 800
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08",
+      "provider": "ft.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+      "provider": "apnews.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.theguardian.com/science/2024/jan/11/newly-discovered-cosmic-megastructure-challenges-theories-of-the-universe",
+      "source_url": "https://www.theguardian.com/science/2024/jan/11/newly-discovered-cosmic-megastructure-challenges-theories-of-the-universe",
+      "provider": "theguardian.com",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 556
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+      "provider": "bloomberg.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002",
+      "provider": "ft.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://www.ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.nasa.gov/news-release/nasa-accelerates-space-exploration-earth-science-for-all-in-2024/",
+      "source_url": "https://www.nasa.gov/news-release/nasa-accelerates-space-exploration-earth-science-for-all-in-2024/",
+      "provider": "nasa.gov",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 916
+    },
+    {
+      "url": "https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+      "provider": "apnews.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://science.nasa.gov/missions/webb/webb-finds-evidence-for-neutron-star-at-heart-of-young-supernova-remnant/",
+      "source_url": "https://science.nasa.gov/missions/webb/webb-finds-evidence-for-neutron-star-at-heart-of-young-supernova-remnant/",
+      "provider": "science.nasa.gov",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 1025
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+      "provider": "bloomberg.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
+      "provider": "ft.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.theguardian.com/science/2024/jan/11/penelope-rogers-obituary",
+      "source_url": "https://www.theguardian.com/science/2024/jan/11/penelope-rogers-obituary",
+      "provider": "theguardian.com",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 274
+    },
+    {
+      "url": "https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+      "provider": "apnews.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+      "source_url": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+      "provider": "science.nasa.gov",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 1032
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+      "provider": "bloomberg.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+      "provider": "ft.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.theguardian.com/science/2024/mar/02/doing-something-for-the-real-world-how-1000-uk-schoolkids-helped-crack-a-crystals-conundrum",
+      "source_url": "https://www.theguardian.com/science/2024/mar/02/doing-something-for-the-real-world-how-1000-uk-schoolkids-helped-crack-a-crystals-conundrum",
+      "provider": "theguardian.com",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 224
+    },
+    {
+      "url": "https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+      "provider": "apnews.com",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "verification_screen",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://archive.is/newest/https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://web.archive.org/web/2/https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+      "provider": "public-archives",
+      "outcome": "skipped_provider_cooldown",
+      "reason": "http_429",
+      "elapsed_ms": 0
+    },
+    {
+      "url": "https://www.theguardian.com/science/2024/mar/02/researchers-study-brain-activity-of-surgeons-for-signs-of-cognitive-overload",
+      "source_url": "https://www.theguardian.com/science/2024/mar/02/researchers-study-brain-activity-of-surgeons-for-signs-of-cognitive-overload",
+      "provider": "theguardian.com",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 287
+    },
+    {
+      "url": "https://science.nasa.gov/missions/webb/in-odd-galaxy-nasas-webb-finds-potential-missing-link-to-first-stars/",
+      "source_url": "https://science.nasa.gov/missions/webb/in-odd-galaxy-nasas-webb-finds-potential-missing-link-to-first-stars/",
+      "provider": "science.nasa.gov",
+      "outcome": "response",
+      "http_status": 200,
+      "elapsed_ms": 921
+    }
+  ],
+  "live_summary": {
+    "attempted_articles": 25,
+    "statuses": {
+      "readable": 10,
+      "partial": 0,
+      "needs_review": 0,
+      "mismatch": 0,
+      "blocked": 4,
+      "unavailable": 11
+    },
+    "extraction_candidates": 10,
+    "extraction_candidate_rate": 0.4,
+    "full_text_verified": null,
+    "browser_followup_candidates": 15,
+    "browser_success_measured": false,
+    "median_elapsed_ms": 912,
+    "p95_elapsed_ms": 30681,
+    "provider_cooldown_skips": 36,
+    "per_publisher": {
+      "Bloomberg": {
+        "attempted_articles": 5,
+        "statuses": {
+          "readable": 0,
+          "partial": 0,
+          "needs_review": 0,
+          "mismatch": 0,
+          "blocked": 2,
+          "unavailable": 3
+        },
+        "extraction_candidates": 0,
+        "extraction_candidate_rate": 0,
+        "full_text_verified": null,
+        "browser_followup_candidates": 5,
+        "browser_success_measured": false,
+        "median_elapsed_ms": 0,
+        "p95_elapsed_ms": 30681
+      },
+      "FT": {
+        "attempted_articles": 5,
+        "statuses": {
+          "readable": 0,
+          "partial": 0,
+          "needs_review": 0,
+          "mismatch": 0,
+          "blocked": 1,
+          "unavailable": 4
+        },
+        "extraction_candidates": 0,
+        "extraction_candidate_rate": 0,
+        "full_text_verified": null,
+        "browser_followup_candidates": 5,
+        "browser_success_measured": false,
+        "median_elapsed_ms": 0,
+        "p95_elapsed_ms": 33661
+      },
+      "Guardian": {
+        "attempted_articles": 5,
+        "statuses": {
+          "readable": 5,
+          "partial": 0,
+          "needs_review": 0,
+          "mismatch": 0,
+          "blocked": 0,
+          "unavailable": 0
+        },
+        "extraction_candidates": 5,
+        "extraction_candidate_rate": 1,
+        "full_text_verified": null,
+        "browser_followup_candidates": 0,
+        "browser_success_measured": false,
+        "median_elapsed_ms": 2271,
+        "p95_elapsed_ms": 3064
+      },
+      "AP": {
+        "attempted_articles": 5,
+        "statuses": {
+          "readable": 0,
+          "partial": 0,
+          "needs_review": 0,
+          "mismatch": 0,
+          "blocked": 1,
+          "unavailable": 4
+        },
+        "extraction_candidates": 0,
+        "extraction_candidate_rate": 0,
+        "full_text_verified": null,
+        "browser_followup_candidates": 5,
+        "browser_success_measured": false,
+        "median_elapsed_ms": 0,
+        "p95_elapsed_ms": 7567
+      },
+      "NASA": {
+        "attempted_articles": 5,
+        "statuses": {
+          "readable": 5,
+          "partial": 0,
+          "needs_review": 0,
+          "mismatch": 0,
+          "blocked": 0,
+          "unavailable": 0
+        },
+        "extraction_candidates": 5,
+        "extraction_candidate_rate": 1,
+        "full_text_verified": null,
+        "browser_followup_candidates": 0,
+        "browser_success_measured": false,
+        "median_elapsed_ms": 1170,
+        "p95_elapsed_ms": 2890
+      }
+    },
+    "full_corpus_run": true
+  },
+  "finished_at": "2026-09-14T18:20:02.925Z",
+  "reader_unchanged_during_run": false,
+  "corpus_unchanged_during_run": true
+}

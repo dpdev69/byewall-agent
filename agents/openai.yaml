@@ -1,0 +1,4 @@
+interface:
+  display_name: "ByeWall"
+  short_description: "Read public article copies with traceable sources"
+  default_prompt: "Use $byewall to find a readable public copy of this article and summarize it with source links."

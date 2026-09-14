@@ -1,0 +1,24 @@
+{
+  "status": "readable",
+  "original_url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+  "source_url": "https://archive.is/20260912171116/https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+  "title": "Anthropic CEO Says It’s Time to Slow AI Model Advances - Bloomberg",
+  "word_count": 1004,
+  "published_at": "2026-09-12T14:17:56.532Z",
+  "captured_at": "2026-09-12T17:11:16.000Z",
+  "completeness": "unknown",
+  "identity": {
+    "verified": true,
+    "evidence": [
+      "archive_url_matches_original",
+      "archive_metadata_matches_original"
+    ]
+  },
+  "demo_context": {
+    "method": "local_html",
+    "source_review": "Visible public snapshot inspected in Safari during development, including opening and final prose; credits outside extracted prose.",
+    "recorded_at": "2026-09-14T18:26:08.808182+00:00",
+    "command_elapsed_seconds": 0.754,
+    "network_discovery_measured": false
+  }
+}

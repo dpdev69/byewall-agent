@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "selected_at": "2026-09-14T18:16:59.818Z",
+  "selection_policy": "Fixed convenience sample of 25 URLs, five per publisher, finalized before the first benchmark run. Two known smoke-test regression articles, four recent FT technology-index news links, archived-era Bloomberg Nvidia news, Guardian science-day links, AP technology/space news, and NASA short/long science controls. No archive availability filtering. Not random, not representative, and not a publisher-wide coverage estimate.",
+  "articles": [
+    {
+      "id": "bloomberg-1",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "expected_title": null,
+      "selection": "previous_smoke_regression",
+      "discovery_source": "https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models",
+      "discovery_method": "previous local smoke test, deliberately retained regression case",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ft-1",
+      "publisher": "FT",
+      "url": "https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "expected_title": null,
+      "selection": "previous_smoke_regression",
+      "discovery_source": "https://www.ft.com/content/20c07191-8da6-440f-b04b-8ea0ebdd9153",
+      "discovery_method": "previous local smoke test, deliberately retained regression case",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "guardian-1",
+      "publisher": "Guardian",
+      "url": "https://www.theguardian.com/science/2024/jan/11/amazon-archaeology-lost-cities-ecuador",
+      "expected_title": "Valley of lost cities that flourished 2,000 years ago found in Amazon",
+      "selection": "new_sample",
+      "discovery_source": "https://www.theguardian.com/science/2024/jan/11/amazon-archaeology-lost-cities-ecuador",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ap-1",
+      "publisher": "AP",
+      "url": "https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+      "expected_title": "A horse-shaped nebula gets its close-up in new photos by NASA’s Webb telescope",
+      "selection": "new_sample",
+      "discovery_source": "https://apnews.com/article/be88e5a1fc018f2407536f1d6f6d3c10",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "nasa-1",
+      "publisher": "NASA",
+      "url": "https://www.nasa.gov/image-article/webb-spots-a-starburst/",
+      "expected_title": "Webb Spots a Starburst",
+      "selection": "short_accessible_control",
+      "discovery_source": "https://www.nasa.gov/image-article/webb-spots-a-starburst/",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "bloomberg-2",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+      "expected_title": "Nvidia’s Next-Generation AI Chip Rollout Slowed by Engineering Snags",
+      "selection": "new_sample",
+      "discovery_source": "https://www.bloomberg.com/news/articles/2024-08-06/nvidia-nvda-blackwell-ai-chip-rollout-slowed-by-engineering-snags",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ft-2",
+      "publisher": "FT",
+      "url": "https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08",
+      "expected_title": "US tech stocks fall after big AI groups call for slowdown",
+      "selection": "new_sample",
+      "discovery_source": "https://www.ft.com/technology",
+      "discovery_method": "official technology index plus original subscription-page title",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "guardian-2",
+      "publisher": "Guardian",
+      "url": "https://www.theguardian.com/science/2024/jan/11/newly-discovered-cosmic-megastructure-challenges-theories-of-the-universe",
+      "expected_title": "Newly discovered cosmic megastructure challenges theories of the universe",
+      "selection": "new_sample",
+      "discovery_source": "https://www.theguardian.com/science/2024/jan/11/newly-discovered-cosmic-megastructure-challenges-theories-of-the-universe",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ap-2",
+      "publisher": "AP",
+      "url": "https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+      "expected_title": "Apple leaps into AI with an array of upcoming iPhone features and a ChatGPT deal to smarten up",
+      "selection": "new_sample",
+      "discovery_source": "https://apnews.com/article/4217d67977f95ead880835a71ecce098",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "nasa-2",
+      "publisher": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-accelerates-space-exploration-earth-science-for-all-in-2024/",
+      "expected_title": "NASA Accelerates Space Exploration, Earth Science for All in 2024",
+      "selection": "long_accessible_control",
+      "discovery_source": "https://www.nasa.gov/news-release/nasa-accelerates-space-exploration-earth-science-for-all-in-2024/",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "bloomberg-3",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+      "expected_title": "Nvidia Unveils Next-Generation Rubin AI Platform for 2026",
+      "selection": "new_sample",
+      "discovery_source": "https://www.bloomberg.com/news/articles/2024-06-02/jensen-huang-computex-keynote-nvidia-reveals-new-ai-software-and-services",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ft-3",
+      "publisher": "FT",
+      "url": "https://www.ft.com/content/4564e6a5-69e9-40a6-bf0f-a888f2f4f002",
+      "expected_title": "Anthropic tells investors it will be profitable for second straight quarter",
+      "selection": "new_sample",
+      "discovery_source": "https://www.ft.com/technology",
+      "discovery_method": "official technology index plus original subscription-page title",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "guardian-3",
+      "publisher": "Guardian",
+      "url": "https://www.theguardian.com/science/2024/jan/11/penelope-rogers-obituary",
+      "expected_title": "Penelope Rogers obituary",
+      "selection": "new_sample",
+      "discovery_source": "https://www.theguardian.com/science/2024/jan/11/penelope-rogers-obituary",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ap-3",
+      "publisher": "AP",
+      "url": "https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+      "expected_title": "Apple begins testing AI software designed to bring a smarter Siri to the iPhone 16",
+      "selection": "new_sample",
+      "discovery_source": "https://apnews.com/article/3bbf16e06e29f09320dcbefcf4ffc40b",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "nasa-3",
+      "publisher": "NASA",
+      "url": "https://science.nasa.gov/missions/webb/webb-finds-evidence-for-neutron-star-at-heart-of-young-supernova-remnant/",
+      "expected_title": "Webb Finds Evidence for Neutron Star at Heart of Young Supernova Remnant",
+      "selection": "new_sample",
+      "discovery_source": "https://science.nasa.gov/missions/webb/webb-finds-evidence-for-neutron-star-at-heart-of-young-supernova-remnant/",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "bloomberg-4",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+      "expected_title": "Nvidia Looks to Extend AI Dominance With New Blackwell Chips",
+      "selection": "new_sample",
+      "discovery_source": "https://www.bloomberg.com/news/articles/2024-03-18/nvidia-unveils-successor-to-its-all-conquering-ai-processor",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ft-4",
+      "publisher": "FT",
+      "url": "https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
+      "expected_title": "Trump rejects calls from tech bosses for AI slowdown",
+      "selection": "new_sample",
+      "discovery_source": "https://www.ft.com/technology",
+      "discovery_method": "official technology index plus original subscription-page title",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "guardian-4",
+      "publisher": "Guardian",
+      "url": "https://www.theguardian.com/science/2024/mar/02/doing-something-for-the-real-world-how-1000-uk-schoolkids-helped-crack-a-crystals-conundrum",
+      "expected_title": "‘Doing something for the real world’: how 1,000 UK schoolkids helped crack a crystals conundrum",
+      "selection": "new_sample",
+      "discovery_source": "https://www.theguardian.com/science/2024/mar/02/doing-something-for-the-real-world-how-1000-uk-schoolkids-helped-crack-a-crystals-conundrum",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ap-4",
+      "publisher": "AP",
+      "url": "https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+      "expected_title": "Apple launches the iPhone into the AI era with free software update",
+      "selection": "new_sample",
+      "discovery_source": "https://apnews.com/article/d46b627cebfab90173a059c81bfeac1a",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "nasa-4",
+      "publisher": "NASA",
+      "url": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+      "expected_title": "NASA’s James Webb Space Telescope Finds Most Distant Known Galaxy",
+      "selection": "new_sample",
+      "discovery_source": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "bloomberg-5",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+      "expected_title": "Nvidia’s $560 Billion Gain Has Street Racing to Lift Targets",
+      "selection": "new_sample",
+      "discovery_source": "https://www.bloomberg.com/news/articles/2024-02-13/nvidia-s-560-billion-rally-has-analysts-racing-to-boost-targets",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ft-5",
+      "publisher": "FT",
+      "url": "https://www.ft.com/content/c765f312-e698-4d31-bf71-f64a656ad6f4",
+      "expected_title": "Musk’s secretive backer builds $40bn SpaceX stake",
+      "selection": "new_sample",
+      "discovery_source": "https://www.ft.com/technology",
+      "discovery_method": "official technology index plus original subscription-page title",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "guardian-5",
+      "publisher": "Guardian",
+      "url": "https://www.theguardian.com/science/2024/mar/02/researchers-study-brain-activity-of-surgeons-for-signs-of-cognitive-overload",
+      "expected_title": "Researchers study brain activity of surgeons for signs of cognitive overload",
+      "selection": "new_sample",
+      "discovery_source": "https://www.theguardian.com/science/2024/mar/02/researchers-study-brain-activity-of-surgeons-for-signs-of-cognitive-overload",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "ap-5",
+      "publisher": "AP",
+      "url": "https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+      "expected_title": "North Korea flies trash balloons over the South as leader Kim doubles down on satellite ambitions",
+      "selection": "new_sample",
+      "discovery_source": "https://apnews.com/article/fa72d5e7327edf285f79587e56e5b560",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    },
+    {
+      "id": "nasa-5",
+      "publisher": "NASA",
+      "url": "https://science.nasa.gov/missions/webb/in-odd-galaxy-nasas-webb-finds-potential-missing-link-to-first-stars/",
+      "expected_title": "In Odd Galaxy, NASA’s Webb Finds Potential Missing Link to First Stars",
+      "selection": "new_sample",
+      "discovery_source": "https://science.nasa.gov/missions/webb/in-odd-galaxy-nasas-webb-finds-potential-missing-link-to-first-stars/",
+      "discovery_method": "official publisher search result or article page",
+      "ground_truth_full_text": null,
+      "expected_live_status": null
+    }
+  ]
+}
