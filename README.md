@@ -6,7 +6,7 @@ ByeWall is a skill for Codex and Claude Code, with a standalone Node.js CLI. Giv
 
 It returns the source actually read, dates when available, article identity evidence, and an explicit outcome. It works without API keys or publisher accounts. Bloomberg and Financial Times are included in the evaluation; availability depends on accessible public copies and can change between runs.
 
-[View the recorded CLI example](demo/README.md) · [Benchmark and limitations](benchmarks/results/report.md)
+[View the recorded CLI example](demo/README.md) · [Benchmark and limitations](benchmarks/results/report.md) · [ByeWall website](https://byewall.hellobasalt.dev/#agent)
 
 ## Install the skill
 
@@ -105,3 +105,5 @@ GitHub Actions runs these checks on Linux, macOS, and Windows with Node.js 20, 2
 - Cite and summarize retrieved evidence. The software license does not grant rights to republish source articles.
 
 See [SKILL.md](SKILL.md) for the complete agent workflow, [CONTRIBUTING.md](CONTRIBUTING.md) for development, and [CHANGELOG.md](CHANGELOG.md) for release notes. Code is [MIT licensed](LICENSE).
+
+ByeWall is a [Basalt](https://hellobasalt.dev/) project. The [ByeWall browser extension](https://byewall.hellobasalt.dev/) does the same lookup with one click. Questions: [support@hellobasalt.dev](mailto:support@hellobasalt.dev).
